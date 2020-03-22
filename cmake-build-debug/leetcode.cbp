@@ -89,6 +89,9 @@
 		<Unit filename="D:/CLionProjects/leetcode/insertion_sort.cpp">
 			<Option target="leetcode"/>
 		</Unit>
+		<Unit filename="D:/CLionProjects/leetcode/insertion_sort.h">
+			<Option target="leetcode"/>
+		</Unit>
 		<Unit filename="D:/CLionProjects/leetcode/main.cpp">
 			<Option target="leetcode"/>
 		</Unit>

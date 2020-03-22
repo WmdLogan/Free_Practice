@@ -6,5 +6,6 @@ CMakeFiles/leetcode.dir/heap_sort.cpp.obj: ../heap_sort.cpp
 CMakeFiles/leetcode.dir/insertion_sort.cpp.obj: ../insertion_sort.cpp
 
 CMakeFiles/leetcode.dir/main.cpp.obj: ../heap_sort.h
+CMakeFiles/leetcode.dir/main.cpp.obj: ../insertion_sort.h
 CMakeFiles/leetcode.dir/main.cpp.obj: ../main.cpp
 
