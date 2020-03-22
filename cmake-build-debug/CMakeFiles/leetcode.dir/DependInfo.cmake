@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/CLionProjects/leetcode/heap_sort.cpp" "D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/heap_sort.cpp.obj"
   "D:/CLionProjects/leetcode/insertion_sort.cpp" "D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/insertion_sort.cpp.obj"
+  "D:/CLionProjects/leetcode/main.cpp" "D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

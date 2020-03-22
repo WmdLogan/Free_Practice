@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 void swap(int add[], int i, int j){
     int a = add[i];
     add[i] = add[j];
@@ -42,13 +41,3 @@ void heap_sort(int add[], int n){
         heapify(add, i, 0);
     }
 }
-int main() {
-    int add[] = {12, 1, 42, 3, 10, 4, 5, 14, 8, 20};
-    int i = 0;
-    heap_sort(add, 10);
-    for (i; i < 10; i++) {
-        cout << add[i] << " ";
-    }
-    return 0;
-}
-//堆排序 先建立大根堆 再出堆 再建立大根堆
