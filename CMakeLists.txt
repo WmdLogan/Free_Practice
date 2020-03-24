@@ -3,4 +3,4 @@ project(leetcode)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(leetcode heap_sort.cpp insertion_sort.cpp main.cpp heap_sort.h insertion_sort.h)
+add_executable(leetcode heap_sort.cpp insertion_sort.cpp main.cpp heap_sort.h insertion_sort.h merge_sort.cpp merge_sort.h)
