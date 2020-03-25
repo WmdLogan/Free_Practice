@@ -3,7 +3,6 @@
 //
 
 #include "merge_sort.h"
-#include "iostream"
 
 void merge(int a[], int L, int M, int R) {
     int L_size = M - L;
