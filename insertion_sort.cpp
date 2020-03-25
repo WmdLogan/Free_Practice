@@ -1,7 +1,6 @@
 //
 // Created by logan on 2020/3/22.
 //
-#include "iostream"
 void insertion_sort(int a[], int n){
     int i, j, v;
     for (i = 1; i < n; i++) {
