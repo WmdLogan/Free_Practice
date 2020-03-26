@@ -122,6 +122,33 @@ leetcode/fast:
 	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/build
 .PHONY : leetcode/fast
 
+bubble_sort.obj: bubble_sort.cpp.obj
+
+.PHONY : bubble_sort.obj
+
+# target to build an object file
+bubble_sort.cpp.obj:
+	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/bubble_sort.cpp.obj
+.PHONY : bubble_sort.cpp.obj
+
+bubble_sort.i: bubble_sort.cpp.i
+
+.PHONY : bubble_sort.i
+
+# target to preprocess a source file
+bubble_sort.cpp.i:
+	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/bubble_sort.cpp.i
+.PHONY : bubble_sort.cpp.i
+
+bubble_sort.s: bubble_sort.cpp.s
+
+.PHONY : bubble_sort.s
+
+# target to generate assembly for a file
+bubble_sort.cpp.s:
+	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/bubble_sort.cpp.s
+.PHONY : bubble_sort.cpp.s
+
 heap_sort.obj: heap_sort.cpp.obj
 
 .PHONY : heap_sort.obj
@@ -203,6 +230,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+merge_sort.obj: merge_sort.cpp.obj
+
+.PHONY : merge_sort.obj
+
+# target to build an object file
+merge_sort.cpp.obj:
+	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/merge_sort.cpp.obj
+.PHONY : merge_sort.cpp.obj
+
+merge_sort.i: merge_sort.cpp.i
+
+.PHONY : merge_sort.i
+
+# target to preprocess a source file
+merge_sort.cpp.i:
+	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/merge_sort.cpp.i
+.PHONY : merge_sort.cpp.i
+
+merge_sort.s: merge_sort.cpp.s
+
+.PHONY : merge_sort.s
+
+# target to generate assembly for a file
+merge_sort.cpp.s:
+	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/merge_sort.cpp.s
+.PHONY : merge_sort.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -212,6 +266,9 @@ help:
 	@echo ... leetcode
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... bubble_sort.obj
+	@echo ... bubble_sort.i
+	@echo ... bubble_sort.s
 	@echo ... heap_sort.obj
 	@echo ... heap_sort.i
 	@echo ... heap_sort.s
@@ -221,6 +278,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... merge_sort.obj
+	@echo ... merge_sort.i
+	@echo ... merge_sort.s
 .PHONY : help
 
 

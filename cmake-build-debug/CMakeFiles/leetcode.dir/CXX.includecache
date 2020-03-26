@@ -6,7 +6,35 @@
 
 #IncludeRegexTransform: 
 
+D:/CLionProjects/leetcode/bubble_sort.cpp
+bubble_sort.h
+D:/CLionProjects/leetcode/bubble_sort.h
+
+D:/CLionProjects/leetcode/bubble_sort.h
+
+D:/CLionProjects/leetcode/heap_sort.h
+
 D:/CLionProjects/leetcode/insertion_sort.cpp
+insertion_sort.h
+D:/CLionProjects/leetcode/insertion_sort.h
+
+D:/CLionProjects/leetcode/insertion_sort.h
+
+D:/CLionProjects/leetcode/main.cpp
 iostream
-D:/CLionProjects/leetcode/iostream
+-
+heap_sort.h
+D:/CLionProjects/leetcode/heap_sort.h
+insertion_sort.h
+D:/CLionProjects/leetcode/insertion_sort.h
+merge_sort.h
+D:/CLionProjects/leetcode/merge_sort.h
+bubble_sort.h
+D:/CLionProjects/leetcode/bubble_sort.h
+
+D:/CLionProjects/leetcode/merge_sort.cpp
+merge_sort.h
+D:/CLionProjects/leetcode/merge_sort.h
+
+D:/CLionProjects/leetcode/merge_sort.h
 

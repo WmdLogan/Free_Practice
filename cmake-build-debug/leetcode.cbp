@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/CLionProjects/leetcode/bubble_sort.cpp">
+			<Option target="leetcode"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/leetcode/bubble_sort.h">
+			<Option target="leetcode"/>
+		</Unit>
 		<Unit filename="D:/CLionProjects/leetcode/heap_sort.cpp">
 			<Option target="leetcode"/>
 		</Unit>
@@ -93,6 +99,12 @@
 			<Option target="leetcode"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/leetcode/main.cpp">
+			<Option target="leetcode"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/leetcode/merge_sort.cpp">
+			<Option target="leetcode"/>
+		</Unit>
+		<Unit filename="D:/CLionProjects/leetcode/merge_sort.h">
 			<Option target="leetcode"/>
 		</Unit>
 		<Unit filename="D:/CLionProjects/leetcode/CMakeLists.txt">

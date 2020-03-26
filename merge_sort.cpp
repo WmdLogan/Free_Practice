@@ -2,7 +2,7 @@
 // Created by logan on 2020/3/24.
 //
 
-
+#include "merge_sort.h"
 void merge(int a[], int L, int M, int R) {
     int L_size = M - L;
     int R_size = R - M + 1;
