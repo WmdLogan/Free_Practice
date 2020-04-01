@@ -12,7 +12,12 @@ int compare(const void *a, const void *b){
     int *pb = (int *) b;
     int num1 = *pa;
     int num2 = *pb;
-    return num1 - num2;
+    return num2 - num1;
+/*    if (num1 - num2 > 0) {
+        return 1;
+    } else {
+        return -1;
+    }*/
 }
 int main() {
     int add[] = {12, 1, 42, 3, 10, 4, 5, 14, 8, 20};
@@ -26,5 +31,8 @@ int main() {
     for (i = 0; i < 10; i++) {
         std::cout << add[i] << " ";
     }
+/*    int key = 0;
+    int* re = (int*)bsearch(&key, add, 10, sizeof(int), compare);
+    std::cout << *re << std::endl;*/
     return 0;
 }
