@@ -56,92 +56,32 @@ include CMakeFiles/leetcode.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/leetcode.dir/flags.make
 
-CMakeFiles/leetcode.dir/heap_sort.cpp.obj: CMakeFiles/leetcode.dir/flags.make
-CMakeFiles/leetcode.dir/heap_sort.cpp.obj: ../heap_sort.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/leetcode.dir/heap_sort.cpp.obj"
-	D:\Mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\leetcode.dir\heap_sort.cpp.obj -c D:\CLionProjects\leetcode\heap_sort.cpp
+CMakeFiles/leetcode.dir/Divide-and-conquer/maximum_subarray.cpp.obj: CMakeFiles/leetcode.dir/flags.make
+CMakeFiles/leetcode.dir/Divide-and-conquer/maximum_subarray.cpp.obj: ../Divide-and-conquer/maximum_subarray.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/leetcode.dir/Divide-and-conquer/maximum_subarray.cpp.obj"
+	D:\Mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\leetcode.dir\Divide-and-conquer\maximum_subarray.cpp.obj -c D:\CLionProjects\leetcode\Divide-and-conquer\maximum_subarray.cpp
 
-CMakeFiles/leetcode.dir/heap_sort.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode.dir/heap_sort.cpp.i"
-	D:\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\leetcode\heap_sort.cpp > CMakeFiles\leetcode.dir\heap_sort.cpp.i
+CMakeFiles/leetcode.dir/Divide-and-conquer/maximum_subarray.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode.dir/Divide-and-conquer/maximum_subarray.cpp.i"
+	D:\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\leetcode\Divide-and-conquer\maximum_subarray.cpp > CMakeFiles\leetcode.dir\Divide-and-conquer\maximum_subarray.cpp.i
 
-CMakeFiles/leetcode.dir/heap_sort.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode.dir/heap_sort.cpp.s"
-	D:\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\leetcode\heap_sort.cpp -o CMakeFiles\leetcode.dir\heap_sort.cpp.s
-
-CMakeFiles/leetcode.dir/insertion_sort.cpp.obj: CMakeFiles/leetcode.dir/flags.make
-CMakeFiles/leetcode.dir/insertion_sort.cpp.obj: ../insertion_sort.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/leetcode.dir/insertion_sort.cpp.obj"
-	D:\Mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\leetcode.dir\insertion_sort.cpp.obj -c D:\CLionProjects\leetcode\insertion_sort.cpp
-
-CMakeFiles/leetcode.dir/insertion_sort.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode.dir/insertion_sort.cpp.i"
-	D:\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\leetcode\insertion_sort.cpp > CMakeFiles\leetcode.dir\insertion_sort.cpp.i
-
-CMakeFiles/leetcode.dir/insertion_sort.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode.dir/insertion_sort.cpp.s"
-	D:\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\leetcode\insertion_sort.cpp -o CMakeFiles\leetcode.dir\insertion_sort.cpp.s
-
-CMakeFiles/leetcode.dir/main.cpp.obj: CMakeFiles/leetcode.dir/flags.make
-CMakeFiles/leetcode.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/leetcode.dir/main.cpp.obj"
-	D:\Mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\leetcode.dir\main.cpp.obj -c D:\CLionProjects\leetcode\main.cpp
-
-CMakeFiles/leetcode.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode.dir/main.cpp.i"
-	D:\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\leetcode\main.cpp > CMakeFiles\leetcode.dir\main.cpp.i
-
-CMakeFiles/leetcode.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode.dir/main.cpp.s"
-	D:\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\leetcode\main.cpp -o CMakeFiles\leetcode.dir\main.cpp.s
-
-CMakeFiles/leetcode.dir/merge_sort.cpp.obj: CMakeFiles/leetcode.dir/flags.make
-CMakeFiles/leetcode.dir/merge_sort.cpp.obj: ../merge_sort.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/leetcode.dir/merge_sort.cpp.obj"
-	D:\Mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\leetcode.dir\merge_sort.cpp.obj -c D:\CLionProjects\leetcode\merge_sort.cpp
-
-CMakeFiles/leetcode.dir/merge_sort.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode.dir/merge_sort.cpp.i"
-	D:\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\leetcode\merge_sort.cpp > CMakeFiles\leetcode.dir\merge_sort.cpp.i
-
-CMakeFiles/leetcode.dir/merge_sort.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode.dir/merge_sort.cpp.s"
-	D:\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\leetcode\merge_sort.cpp -o CMakeFiles\leetcode.dir\merge_sort.cpp.s
-
-CMakeFiles/leetcode.dir/bubble_sort.cpp.obj: CMakeFiles/leetcode.dir/flags.make
-CMakeFiles/leetcode.dir/bubble_sort.cpp.obj: ../bubble_sort.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/leetcode.dir/bubble_sort.cpp.obj"
-	D:\Mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\leetcode.dir\bubble_sort.cpp.obj -c D:\CLionProjects\leetcode\bubble_sort.cpp
-
-CMakeFiles/leetcode.dir/bubble_sort.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode.dir/bubble_sort.cpp.i"
-	D:\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\leetcode\bubble_sort.cpp > CMakeFiles\leetcode.dir\bubble_sort.cpp.i
-
-CMakeFiles/leetcode.dir/bubble_sort.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode.dir/bubble_sort.cpp.s"
-	D:\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\leetcode\bubble_sort.cpp -o CMakeFiles\leetcode.dir\bubble_sort.cpp.s
+CMakeFiles/leetcode.dir/Divide-and-conquer/maximum_subarray.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode.dir/Divide-and-conquer/maximum_subarray.cpp.s"
+	D:\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\leetcode\Divide-and-conquer\maximum_subarray.cpp -o CMakeFiles\leetcode.dir\Divide-and-conquer\maximum_subarray.cpp.s
 
 # Object files for target leetcode
 leetcode_OBJECTS = \
-"CMakeFiles/leetcode.dir/heap_sort.cpp.obj" \
-"CMakeFiles/leetcode.dir/insertion_sort.cpp.obj" \
-"CMakeFiles/leetcode.dir/main.cpp.obj" \
-"CMakeFiles/leetcode.dir/merge_sort.cpp.obj" \
-"CMakeFiles/leetcode.dir/bubble_sort.cpp.obj"
+"CMakeFiles/leetcode.dir/Divide-and-conquer/maximum_subarray.cpp.obj"
 
 # External object files for target leetcode
 leetcode_EXTERNAL_OBJECTS =
 
-leetcode.exe: CMakeFiles/leetcode.dir/heap_sort.cpp.obj
-leetcode.exe: CMakeFiles/leetcode.dir/insertion_sort.cpp.obj
-leetcode.exe: CMakeFiles/leetcode.dir/main.cpp.obj
-leetcode.exe: CMakeFiles/leetcode.dir/merge_sort.cpp.obj
-leetcode.exe: CMakeFiles/leetcode.dir/bubble_sort.cpp.obj
+leetcode.exe: CMakeFiles/leetcode.dir/Divide-and-conquer/maximum_subarray.cpp.obj
 leetcode.exe: CMakeFiles/leetcode.dir/build.make
 leetcode.exe: CMakeFiles/leetcode.dir/linklibs.rsp
 leetcode.exe: CMakeFiles/leetcode.dir/objects1.rsp
 leetcode.exe: CMakeFiles/leetcode.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable leetcode.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable leetcode.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\leetcode.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

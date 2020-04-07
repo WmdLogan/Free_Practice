@@ -2,10 +2,10 @@
 // Created by logan on 2020/3/22.
 //
 #include <iostream>
-#include "heap_sort.h"
-#include "insertion_sort.h"
-#include "merge_sort.h"
-#include "bubble_sort.h"
+#include "sort/heap_sort.h"
+#include "sort/insertion_sort.h"
+#include "sort/merge_sort.h"
+#include "sort/bubble_sort.h"
 
 int compare(const void *a, const void *b){
     int *pa = (int *) a;

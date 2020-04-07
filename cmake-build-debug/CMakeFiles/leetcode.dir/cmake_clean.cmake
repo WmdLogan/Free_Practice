@@ -1,9 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/leetcode.dir/bubble_sort.cpp.obj"
-  "CMakeFiles/leetcode.dir/heap_sort.cpp.obj"
-  "CMakeFiles/leetcode.dir/insertion_sort.cpp.obj"
-  "CMakeFiles/leetcode.dir/main.cpp.obj"
-  "CMakeFiles/leetcode.dir/merge_sort.cpp.obj"
+  "CMakeFiles/leetcode.dir/Divide-and-conquer/maximum_subarray.cpp.obj"
   "leetcode.exe"
   "leetcode.exe.manifest"
   "leetcode.pdb"

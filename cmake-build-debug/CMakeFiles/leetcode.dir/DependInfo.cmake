@@ -4,11 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/CLionProjects/leetcode/bubble_sort.cpp" "D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/bubble_sort.cpp.obj"
-  "D:/CLionProjects/leetcode/heap_sort.cpp" "D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/heap_sort.cpp.obj"
-  "D:/CLionProjects/leetcode/insertion_sort.cpp" "D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/insertion_sort.cpp.obj"
-  "D:/CLionProjects/leetcode/main.cpp" "D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/main.cpp.obj"
-  "D:/CLionProjects/leetcode/merge_sort.cpp" "D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/merge_sort.cpp.obj"
+  "D:/CLionProjects/leetcode/Divide-and-conquer/maximum_subarray.cpp" "D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/Divide-and-conquer/maximum_subarray.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
