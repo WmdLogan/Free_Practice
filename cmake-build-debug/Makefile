@@ -122,13 +122,52 @@ leetcode/fast:
 	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/build
 .PHONY : leetcode/fast
 
+#=============================================================================
+# Target rules for targets named leetcode_subarray
+
+# Build rule for target.
+leetcode_subarray: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 leetcode_subarray
+.PHONY : leetcode_subarray
+
+# fast build rule for target.
+leetcode_subarray/fast:
+	$(MAKE) -f CMakeFiles\leetcode_subarray.dir\build.make CMakeFiles/leetcode_subarray.dir/build
+.PHONY : leetcode_subarray/fast
+
+#=============================================================================
+# Target rules for targets named leetcode_Strassen
+
+# Build rule for target.
+leetcode_Strassen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 leetcode_Strassen
+.PHONY : leetcode_Strassen
+
+# fast build rule for target.
+leetcode_Strassen/fast:
+	$(MAKE) -f CMakeFiles\leetcode_Strassen.dir\build.make CMakeFiles/leetcode_Strassen.dir/build
+.PHONY : leetcode_Strassen/fast
+
+#=============================================================================
+# Target rules for targets named heap
+
+# Build rule for target.
+heap: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 heap
+.PHONY : heap
+
+# fast build rule for target.
+heap/fast:
+	$(MAKE) -f CMakeFiles\heap.dir\build.make CMakeFiles/heap.dir/build
+.PHONY : heap/fast
+
 Divide-and-conquer/maximum_subarray.obj: Divide-and-conquer/maximum_subarray.cpp.obj
 
 .PHONY : Divide-and-conquer/maximum_subarray.obj
 
 # target to build an object file
 Divide-and-conquer/maximum_subarray.cpp.obj:
-	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/Divide-and-conquer/maximum_subarray.cpp.obj
+	$(MAKE) -f CMakeFiles\leetcode_subarray.dir\build.make CMakeFiles/leetcode_subarray.dir/Divide-and-conquer/maximum_subarray.cpp.obj
 .PHONY : Divide-and-conquer/maximum_subarray.cpp.obj
 
 Divide-and-conquer/maximum_subarray.i: Divide-and-conquer/maximum_subarray.cpp.i
@@ -137,7 +176,7 @@ Divide-and-conquer/maximum_subarray.i: Divide-and-conquer/maximum_subarray.cpp.i
 
 # target to preprocess a source file
 Divide-and-conquer/maximum_subarray.cpp.i:
-	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/Divide-and-conquer/maximum_subarray.cpp.i
+	$(MAKE) -f CMakeFiles\leetcode_subarray.dir\build.make CMakeFiles/leetcode_subarray.dir/Divide-and-conquer/maximum_subarray.cpp.i
 .PHONY : Divide-and-conquer/maximum_subarray.cpp.i
 
 Divide-and-conquer/maximum_subarray.s: Divide-and-conquer/maximum_subarray.cpp.s
@@ -146,8 +185,173 @@ Divide-and-conquer/maximum_subarray.s: Divide-and-conquer/maximum_subarray.cpp.s
 
 # target to generate assembly for a file
 Divide-and-conquer/maximum_subarray.cpp.s:
-	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/Divide-and-conquer/maximum_subarray.cpp.s
+	$(MAKE) -f CMakeFiles\leetcode_subarray.dir\build.make CMakeFiles/leetcode_subarray.dir/Divide-and-conquer/maximum_subarray.cpp.s
 .PHONY : Divide-and-conquer/maximum_subarray.cpp.s
+
+Divide-and-conquer/square_matrix_multiply.obj: Divide-and-conquer/square_matrix_multiply.cpp.obj
+
+.PHONY : Divide-and-conquer/square_matrix_multiply.obj
+
+# target to build an object file
+Divide-and-conquer/square_matrix_multiply.cpp.obj:
+	$(MAKE) -f CMakeFiles\leetcode_Strassen.dir\build.make CMakeFiles/leetcode_Strassen.dir/Divide-and-conquer/square_matrix_multiply.cpp.obj
+.PHONY : Divide-and-conquer/square_matrix_multiply.cpp.obj
+
+Divide-and-conquer/square_matrix_multiply.i: Divide-and-conquer/square_matrix_multiply.cpp.i
+
+.PHONY : Divide-and-conquer/square_matrix_multiply.i
+
+# target to preprocess a source file
+Divide-and-conquer/square_matrix_multiply.cpp.i:
+	$(MAKE) -f CMakeFiles\leetcode_Strassen.dir\build.make CMakeFiles/leetcode_Strassen.dir/Divide-and-conquer/square_matrix_multiply.cpp.i
+.PHONY : Divide-and-conquer/square_matrix_multiply.cpp.i
+
+Divide-and-conquer/square_matrix_multiply.s: Divide-and-conquer/square_matrix_multiply.cpp.s
+
+.PHONY : Divide-and-conquer/square_matrix_multiply.s
+
+# target to generate assembly for a file
+Divide-and-conquer/square_matrix_multiply.cpp.s:
+	$(MAKE) -f CMakeFiles\leetcode_Strassen.dir\build.make CMakeFiles/leetcode_Strassen.dir/Divide-and-conquer/square_matrix_multiply.cpp.s
+.PHONY : Divide-and-conquer/square_matrix_multiply.cpp.s
+
+Sort/bubble_sort.obj: Sort/bubble_sort.cpp.obj
+
+.PHONY : Sort/bubble_sort.obj
+
+# target to build an object file
+Sort/bubble_sort.cpp.obj:
+	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/Sort/bubble_sort.cpp.obj
+.PHONY : Sort/bubble_sort.cpp.obj
+
+Sort/bubble_sort.i: Sort/bubble_sort.cpp.i
+
+.PHONY : Sort/bubble_sort.i
+
+# target to preprocess a source file
+Sort/bubble_sort.cpp.i:
+	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/Sort/bubble_sort.cpp.i
+.PHONY : Sort/bubble_sort.cpp.i
+
+Sort/bubble_sort.s: Sort/bubble_sort.cpp.s
+
+.PHONY : Sort/bubble_sort.s
+
+# target to generate assembly for a file
+Sort/bubble_sort.cpp.s:
+	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/Sort/bubble_sort.cpp.s
+.PHONY : Sort/bubble_sort.cpp.s
+
+Sort/heap_sort.obj: Sort/heap_sort.cpp.obj
+
+.PHONY : Sort/heap_sort.obj
+
+# target to build an object file
+Sort/heap_sort.cpp.obj:
+	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/Sort/heap_sort.cpp.obj
+	$(MAKE) -f CMakeFiles\heap.dir\build.make CMakeFiles/heap.dir/Sort/heap_sort.cpp.obj
+.PHONY : Sort/heap_sort.cpp.obj
+
+Sort/heap_sort.i: Sort/heap_sort.cpp.i
+
+.PHONY : Sort/heap_sort.i
+
+# target to preprocess a source file
+Sort/heap_sort.cpp.i:
+	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/Sort/heap_sort.cpp.i
+	$(MAKE) -f CMakeFiles\heap.dir\build.make CMakeFiles/heap.dir/Sort/heap_sort.cpp.i
+.PHONY : Sort/heap_sort.cpp.i
+
+Sort/heap_sort.s: Sort/heap_sort.cpp.s
+
+.PHONY : Sort/heap_sort.s
+
+# target to generate assembly for a file
+Sort/heap_sort.cpp.s:
+	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/Sort/heap_sort.cpp.s
+	$(MAKE) -f CMakeFiles\heap.dir\build.make CMakeFiles/heap.dir/Sort/heap_sort.cpp.s
+.PHONY : Sort/heap_sort.cpp.s
+
+Sort/insertion_sort.obj: Sort/insertion_sort.cpp.obj
+
+.PHONY : Sort/insertion_sort.obj
+
+# target to build an object file
+Sort/insertion_sort.cpp.obj:
+	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/Sort/insertion_sort.cpp.obj
+.PHONY : Sort/insertion_sort.cpp.obj
+
+Sort/insertion_sort.i: Sort/insertion_sort.cpp.i
+
+.PHONY : Sort/insertion_sort.i
+
+# target to preprocess a source file
+Sort/insertion_sort.cpp.i:
+	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/Sort/insertion_sort.cpp.i
+.PHONY : Sort/insertion_sort.cpp.i
+
+Sort/insertion_sort.s: Sort/insertion_sort.cpp.s
+
+.PHONY : Sort/insertion_sort.s
+
+# target to generate assembly for a file
+Sort/insertion_sort.cpp.s:
+	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/Sort/insertion_sort.cpp.s
+.PHONY : Sort/insertion_sort.cpp.s
+
+Sort/merge_sort.obj: Sort/merge_sort.cpp.obj
+
+.PHONY : Sort/merge_sort.obj
+
+# target to build an object file
+Sort/merge_sort.cpp.obj:
+	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/Sort/merge_sort.cpp.obj
+.PHONY : Sort/merge_sort.cpp.obj
+
+Sort/merge_sort.i: Sort/merge_sort.cpp.i
+
+.PHONY : Sort/merge_sort.i
+
+# target to preprocess a source file
+Sort/merge_sort.cpp.i:
+	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/Sort/merge_sort.cpp.i
+.PHONY : Sort/merge_sort.cpp.i
+
+Sort/merge_sort.s: Sort/merge_sort.cpp.s
+
+.PHONY : Sort/merge_sort.s
+
+# target to generate assembly for a file
+Sort/merge_sort.cpp.s:
+	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/Sort/merge_sort.cpp.s
+.PHONY : Sort/merge_sort.cpp.s
+
+main.obj: main.cpp.obj
+
+.PHONY : main.obj
+
+# target to build an object file
+main.cpp.obj:
+	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/main.cpp.obj
+.PHONY : main.cpp.obj
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -157,10 +361,31 @@ help:
 	@echo ... depend
 	@echo ... leetcode
 	@echo ... edit_cache
+	@echo ... leetcode_subarray
+	@echo ... leetcode_Strassen
+	@echo ... heap
 	@echo ... rebuild_cache
 	@echo ... Divide-and-conquer/maximum_subarray.obj
 	@echo ... Divide-and-conquer/maximum_subarray.i
 	@echo ... Divide-and-conquer/maximum_subarray.s
+	@echo ... Divide-and-conquer/square_matrix_multiply.obj
+	@echo ... Divide-and-conquer/square_matrix_multiply.i
+	@echo ... Divide-and-conquer/square_matrix_multiply.s
+	@echo ... Sort/bubble_sort.obj
+	@echo ... Sort/bubble_sort.i
+	@echo ... Sort/bubble_sort.s
+	@echo ... Sort/heap_sort.obj
+	@echo ... Sort/heap_sort.i
+	@echo ... Sort/heap_sort.s
+	@echo ... Sort/insertion_sort.obj
+	@echo ... Sort/insertion_sort.i
+	@echo ... Sort/insertion_sort.s
+	@echo ... Sort/merge_sort.obj
+	@echo ... Sort/merge_sort.i
+	@echo ... Sort/merge_sort.s
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
 .PHONY : help
 
 

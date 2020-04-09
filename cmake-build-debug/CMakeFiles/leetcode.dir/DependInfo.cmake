@@ -4,12 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/CLionProjects/leetcode/Divide-and-conquer/maximum_subarray.cpp" "D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/Divide-and-conquer/maximum_subarray.cpp.obj"
+  "D:/CLionProjects/leetcode/Sort/bubble_sort.cpp" "D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/Sort/bubble_sort.cpp.obj"
+  "D:/CLionProjects/leetcode/Sort/heap_sort.cpp" "D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/Sort/heap_sort.cpp.obj"
+  "D:/CLionProjects/leetcode/Sort/insertion_sort.cpp" "D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/Sort/insertion_sort.cpp.obj"
+  "D:/CLionProjects/leetcode/Sort/merge_sort.cpp" "D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/Sort/merge_sort.cpp.obj"
+  "D:/CLionProjects/leetcode/main.cpp" "D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../Sort"
+  "../Divide-and-conquer"
   )
 
 # Targets to which this target links.
