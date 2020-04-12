@@ -136,6 +136,19 @@ leetcode_subarray/fast:
 .PHONY : leetcode_subarray/fast
 
 #=============================================================================
+# Target rules for targets named quick
+
+# Build rule for target.
+quick: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 quick
+.PHONY : quick
+
+# fast build rule for target.
+quick/fast:
+	$(MAKE) -f CMakeFiles\quick.dir\build.make CMakeFiles/quick.dir/build
+.PHONY : quick/fast
+
+#=============================================================================
 # Target rules for targets named leetcode_Strassen
 
 # Build rule for target.
@@ -326,6 +339,33 @@ Sort/merge_sort.cpp.s:
 	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/Sort/merge_sort.cpp.s
 .PHONY : Sort/merge_sort.cpp.s
 
+Sort/quick_sort.obj: Sort/quick_sort.cpp.obj
+
+.PHONY : Sort/quick_sort.obj
+
+# target to build an object file
+Sort/quick_sort.cpp.obj:
+	$(MAKE) -f CMakeFiles\quick.dir\build.make CMakeFiles/quick.dir/Sort/quick_sort.cpp.obj
+.PHONY : Sort/quick_sort.cpp.obj
+
+Sort/quick_sort.i: Sort/quick_sort.cpp.i
+
+.PHONY : Sort/quick_sort.i
+
+# target to preprocess a source file
+Sort/quick_sort.cpp.i:
+	$(MAKE) -f CMakeFiles\quick.dir\build.make CMakeFiles/quick.dir/Sort/quick_sort.cpp.i
+.PHONY : Sort/quick_sort.cpp.i
+
+Sort/quick_sort.s: Sort/quick_sort.cpp.s
+
+.PHONY : Sort/quick_sort.s
+
+# target to generate assembly for a file
+Sort/quick_sort.cpp.s:
+	$(MAKE) -f CMakeFiles\quick.dir\build.make CMakeFiles/quick.dir/Sort/quick_sort.cpp.s
+.PHONY : Sort/quick_sort.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -362,6 +402,7 @@ help:
 	@echo ... leetcode
 	@echo ... edit_cache
 	@echo ... leetcode_subarray
+	@echo ... quick
 	@echo ... leetcode_Strassen
 	@echo ... heap
 	@echo ... rebuild_cache
@@ -383,6 +424,9 @@ help:
 	@echo ... Sort/merge_sort.obj
 	@echo ... Sort/merge_sort.i
 	@echo ... Sort/merge_sort.s
+	@echo ... Sort/quick_sort.obj
+	@echo ... Sort/quick_sort.i
+	@echo ... Sort/quick_sort.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

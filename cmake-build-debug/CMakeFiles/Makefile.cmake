@@ -55,6 +55,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/leetcode.dir/DependInfo.cmake"
   "CMakeFiles/leetcode_subarray.dir/DependInfo.cmake"
+  "CMakeFiles/quick.dir/DependInfo.cmake"
   "CMakeFiles/leetcode_Strassen.dir/DependInfo.cmake"
   "CMakeFiles/heap.dir/DependInfo.cmake"
   )
