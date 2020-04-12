@@ -25,7 +25,22 @@ int Partition(int add[], int l, int r){
     swap(add, ++i, j);
     return i;
 }
-
+//快速排序的随机化版本
+int Random_Partition(int add[], int l, int r){
+    int dice = rand() % r;
+    swap(add, dice, r);
+    int i = l - 1;
+    int m = add[r];
+    int j;
+    for (j = l; j < r; j++) {
+        if (add[j] <= m) {
+            i++;
+            swap(add, i, j);
+        }
+    }
+    swap(add, ++i, j);
+    return i;
+}
 void Quick_sort(int add[], int l, int r){
     if(l >= r){
         return;
