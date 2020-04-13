@@ -8,6 +8,7 @@ add_executable(leetcode_subarray Divide-and-conquer/maximum_subarray.cpp)
 add_executable(leetcode_Strassen Divide-and-conquer/square_matrix_multiply.cpp)
 add_executable(heap Sort/heap_sort.cpp)
 add_executable(quick Sort/quick_sort.cpp)
+add_executable(counting Sort/counting_sort.cpp)
 
 #添加包含目录
 include_directories(Sort)
