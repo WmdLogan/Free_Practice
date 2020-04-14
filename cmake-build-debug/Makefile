@@ -136,17 +136,17 @@ leetcode_subarray/fast:
 .PHONY : leetcode_subarray/fast
 
 #=============================================================================
-# Target rules for targets named quick
+# Target rules for targets named counting
 
 # Build rule for target.
-quick: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 quick
-.PHONY : quick
+counting: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 counting
+.PHONY : counting
 
 # fast build rule for target.
-quick/fast:
-	$(MAKE) -f CMakeFiles\quick.dir\build.make CMakeFiles/quick.dir/build
-.PHONY : quick/fast
+counting/fast:
+	$(MAKE) -f CMakeFiles\counting.dir\build.make CMakeFiles/counting.dir/build
+.PHONY : counting/fast
 
 #=============================================================================
 # Target rules for targets named leetcode_Strassen
@@ -160,6 +160,32 @@ leetcode_Strassen: cmake_check_build_system
 leetcode_Strassen/fast:
 	$(MAKE) -f CMakeFiles\leetcode_Strassen.dir\build.make CMakeFiles/leetcode_Strassen.dir/build
 .PHONY : leetcode_Strassen/fast
+
+#=============================================================================
+# Target rules for targets named quick
+
+# Build rule for target.
+quick: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 quick
+.PHONY : quick
+
+# fast build rule for target.
+quick/fast:
+	$(MAKE) -f CMakeFiles\quick.dir\build.make CMakeFiles/quick.dir/build
+.PHONY : quick/fast
+
+#=============================================================================
+# Target rules for targets named bucket
+
+# Build rule for target.
+bucket: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 bucket
+.PHONY : bucket
+
+# fast build rule for target.
+bucket/fast:
+	$(MAKE) -f CMakeFiles\bucket.dir\build.make CMakeFiles/bucket.dir/build
+.PHONY : bucket/fast
 
 #=============================================================================
 # Target rules for targets named heap
@@ -255,13 +281,66 @@ Sort/bubble_sort.cpp.s:
 	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/Sort/bubble_sort.cpp.s
 .PHONY : Sort/bubble_sort.cpp.s
 
+Sort/bucket_sort.obj: Sort/bucket_sort.cpp.obj
+
+.PHONY : Sort/bucket_sort.obj
+
+# target to build an object file
+Sort/bucket_sort.cpp.obj:
+	$(MAKE) -f CMakeFiles\bucket.dir\build.make CMakeFiles/bucket.dir/Sort/bucket_sort.cpp.obj
+.PHONY : Sort/bucket_sort.cpp.obj
+
+Sort/bucket_sort.i: Sort/bucket_sort.cpp.i
+
+.PHONY : Sort/bucket_sort.i
+
+# target to preprocess a source file
+Sort/bucket_sort.cpp.i:
+	$(MAKE) -f CMakeFiles\bucket.dir\build.make CMakeFiles/bucket.dir/Sort/bucket_sort.cpp.i
+.PHONY : Sort/bucket_sort.cpp.i
+
+Sort/bucket_sort.s: Sort/bucket_sort.cpp.s
+
+.PHONY : Sort/bucket_sort.s
+
+# target to generate assembly for a file
+Sort/bucket_sort.cpp.s:
+	$(MAKE) -f CMakeFiles\bucket.dir\build.make CMakeFiles/bucket.dir/Sort/bucket_sort.cpp.s
+.PHONY : Sort/bucket_sort.cpp.s
+
+Sort/counting_sort.obj: Sort/counting_sort.cpp.obj
+
+.PHONY : Sort/counting_sort.obj
+
+# target to build an object file
+Sort/counting_sort.cpp.obj:
+	$(MAKE) -f CMakeFiles\counting.dir\build.make CMakeFiles/counting.dir/Sort/counting_sort.cpp.obj
+.PHONY : Sort/counting_sort.cpp.obj
+
+Sort/counting_sort.i: Sort/counting_sort.cpp.i
+
+.PHONY : Sort/counting_sort.i
+
+# target to preprocess a source file
+Sort/counting_sort.cpp.i:
+	$(MAKE) -f CMakeFiles\counting.dir\build.make CMakeFiles/counting.dir/Sort/counting_sort.cpp.i
+.PHONY : Sort/counting_sort.cpp.i
+
+Sort/counting_sort.s: Sort/counting_sort.cpp.s
+
+.PHONY : Sort/counting_sort.s
+
+# target to generate assembly for a file
+Sort/counting_sort.cpp.s:
+	$(MAKE) -f CMakeFiles\counting.dir\build.make CMakeFiles/counting.dir/Sort/counting_sort.cpp.s
+.PHONY : Sort/counting_sort.cpp.s
+
 Sort/heap_sort.obj: Sort/heap_sort.cpp.obj
 
 .PHONY : Sort/heap_sort.obj
 
 # target to build an object file
 Sort/heap_sort.cpp.obj:
-	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/Sort/heap_sort.cpp.obj
 	$(MAKE) -f CMakeFiles\heap.dir\build.make CMakeFiles/heap.dir/Sort/heap_sort.cpp.obj
 .PHONY : Sort/heap_sort.cpp.obj
 
@@ -271,7 +350,6 @@ Sort/heap_sort.i: Sort/heap_sort.cpp.i
 
 # target to preprocess a source file
 Sort/heap_sort.cpp.i:
-	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/Sort/heap_sort.cpp.i
 	$(MAKE) -f CMakeFiles\heap.dir\build.make CMakeFiles/heap.dir/Sort/heap_sort.cpp.i
 .PHONY : Sort/heap_sort.cpp.i
 
@@ -281,7 +359,6 @@ Sort/heap_sort.s: Sort/heap_sort.cpp.s
 
 # target to generate assembly for a file
 Sort/heap_sort.cpp.s:
-	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/Sort/heap_sort.cpp.s
 	$(MAKE) -f CMakeFiles\heap.dir\build.make CMakeFiles/heap.dir/Sort/heap_sort.cpp.s
 .PHONY : Sort/heap_sort.cpp.s
 
@@ -402,8 +479,10 @@ help:
 	@echo ... leetcode
 	@echo ... edit_cache
 	@echo ... leetcode_subarray
-	@echo ... quick
+	@echo ... counting
 	@echo ... leetcode_Strassen
+	@echo ... quick
+	@echo ... bucket
 	@echo ... heap
 	@echo ... rebuild_cache
 	@echo ... Divide-and-conquer/maximum_subarray.obj
@@ -415,6 +494,12 @@ help:
 	@echo ... Sort/bubble_sort.obj
 	@echo ... Sort/bubble_sort.i
 	@echo ... Sort/bubble_sort.s
+	@echo ... Sort/bucket_sort.obj
+	@echo ... Sort/bucket_sort.i
+	@echo ... Sort/bucket_sort.s
+	@echo ... Sort/counting_sort.obj
+	@echo ... Sort/counting_sort.i
+	@echo ... Sort/counting_sort.s
 	@echo ... Sort/heap_sort.obj
 	@echo ... Sort/heap_sort.i
 	@echo ... Sort/heap_sort.s

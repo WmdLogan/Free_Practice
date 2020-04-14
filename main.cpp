@@ -22,8 +22,8 @@ int compare(const void *a, const void *b){
 int main() {
     int add[] = {12, 1, 42, 3, 10, 4, 5, 14, 8, 20};
     int i;
-    heap_sort(add, 10);
-//    insertion_sort(add, 10);
+//    heap_sort(add, 10);
+    insertion_sort(add, 10);
 //    merge_sort(add, 0, 9);
 //    bubble_sort(add, 10);
 //    qsort(add, 10, sizeof(int), compare);
