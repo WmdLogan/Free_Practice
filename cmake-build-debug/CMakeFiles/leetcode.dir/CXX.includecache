@@ -6,27 +6,9 @@
 
 #IncludeRegexTransform: 
 
-../Sort/bubble_sort.h
-
-../Sort/heap_sort.h
-
-../Sort/insertion_sort.h
-
-../Sort/merge_sort.h
-
-D:/CLionProjects/leetcode/Sort/heap_sort.cpp
-iostream
-D:/CLionProjects/leetcode/Sort/iostream
-
-D:/CLionProjects/leetcode/main.cpp
-iostream
--
-heap_sort.h
-D:/CLionProjects/leetcode/heap_sort.h
+D:/CLionProjects/leetcode/Sort/insertion_sort.cpp
 insertion_sort.h
-D:/CLionProjects/leetcode/insertion_sort.h
-merge_sort.h
-D:/CLionProjects/leetcode/merge_sort.h
-bubble_sort.h
-D:/CLionProjects/leetcode/bubble_sort.h
+D:/CLionProjects/leetcode/Sort/insertion_sort.h
+
+D:/CLionProjects/leetcode/Sort/insertion_sort.h
 

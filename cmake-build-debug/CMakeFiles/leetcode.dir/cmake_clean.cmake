@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/leetcode.dir/Sort/bubble_sort.cpp.obj"
-  "CMakeFiles/leetcode.dir/Sort/heap_sort.cpp.obj"
   "CMakeFiles/leetcode.dir/Sort/insertion_sort.cpp.obj"
   "CMakeFiles/leetcode.dir/Sort/merge_sort.cpp.obj"
   "CMakeFiles/leetcode.dir/main.cpp.obj"

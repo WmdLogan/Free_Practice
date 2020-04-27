@@ -1,9 +1,10 @@
 D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir
-D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/leetcode_subarray.dir
-D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/counting.dir
-D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/leetcode_Strassen.dir
-D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/quick.dir
+D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/Strassen.dir
+D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/subarray.dir
+D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/tree_walk.dir
 D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/bucket.dir
 D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/heap.dir
+D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/counting.dir
+D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/quick.dir
+D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/rebuild_cache.dir
