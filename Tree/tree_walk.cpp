@@ -16,8 +16,7 @@ void build_tree(Tree *tree, int n) {
     if (n <= tree->key) {
         if (tree->left_child == NULL) {
             printf("left new\n");
-            Tree *temp;
-            temp = (Tree *) malloc(sizeof(Tree));
+            Tree *temp = (Tree *) malloc(sizeof(Tree));
             tree->left_child = temp;
             temp->key = n;
             temp->parent = tree;
@@ -30,8 +29,7 @@ void build_tree(Tree *tree, int n) {
     } else{
         if(tree->right_child == NULL){
             printf("right new\n");
-            Tree *temp;
-            temp = (Tree *) malloc(sizeof(Tree));
+            Tree *temp = (Tree *) malloc(sizeof(Tree));
             tree->right_child = temp;
             temp->key = n;
             temp->parent = tree;
