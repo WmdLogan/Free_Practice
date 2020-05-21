@@ -60,6 +60,8 @@ void inorder_tree_walk(Tree *tree){
         inorder_tree_walk(tree->right_child);
     }
 }
+
+
 void postorder_tree_walk(Tree *tree){
     if (tree->left_child != NULL) {
         postorder_tree_walk(tree->left_child);

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/CLionProjects/leetcode/Sort/quick_sort.cpp
+quick_sort.h
+D:/CLionProjects/leetcode/Sort/quick_sort.h
+iostream
+D:/CLionProjects/leetcode/Sort/iostream
+
+D:/CLionProjects/leetcode/Sort/quick_sort.h
+

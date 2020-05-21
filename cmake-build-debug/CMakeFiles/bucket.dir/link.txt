@@ -1,0 +1,3 @@
+"D:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\bucket.dir/objects.a
+D:\Mingw\bin\ar.exe cr CMakeFiles\bucket.dir/objects.a @CMakeFiles\bucket.dir\objects1.rsp
+D:\Mingw\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\bucket.dir/objects.a -Wl,--no-whole-archive  -o bucket.exe -Wl,--out-implib,libbucket.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\bucket.dir\linklibs.rsp

@@ -213,6 +213,19 @@ quick/fast:
 	$(MAKE) -f CMakeFiles\quick.dir\build.make CMakeFiles/quick.dir/build
 .PHONY : quick/fast
 
+#=============================================================================
+# Target rules for targets named List
+
+# Build rule for target.
+List: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 List
+.PHONY : List
+
+# fast build rule for target.
+List/fast:
+	$(MAKE) -f CMakeFiles\List.dir\build.make CMakeFiles/List.dir/build
+.PHONY : List/fast
+
 Divide-and-conquer/maximum_subarray.obj: Divide-and-conquer/maximum_subarray.cpp.obj
 
 .PHONY : Divide-and-conquer/maximum_subarray.obj
@@ -266,6 +279,33 @@ Divide-and-conquer/square_matrix_multiply.s: Divide-and-conquer/square_matrix_mu
 Divide-and-conquer/square_matrix_multiply.cpp.s:
 	$(MAKE) -f CMakeFiles\Strassen.dir\build.make CMakeFiles/Strassen.dir/Divide-and-conquer/square_matrix_multiply.cpp.s
 .PHONY : Divide-and-conquer/square_matrix_multiply.cpp.s
+
+List/List.obj: List/List.cpp.obj
+
+.PHONY : List/List.obj
+
+# target to build an object file
+List/List.cpp.obj:
+	$(MAKE) -f CMakeFiles\List.dir\build.make CMakeFiles/List.dir/List/List.cpp.obj
+.PHONY : List/List.cpp.obj
+
+List/List.i: List/List.cpp.i
+
+.PHONY : List/List.i
+
+# target to preprocess a source file
+List/List.cpp.i:
+	$(MAKE) -f CMakeFiles\List.dir\build.make CMakeFiles/List.dir/List/List.cpp.i
+.PHONY : List/List.cpp.i
+
+List/List.s: List/List.cpp.s
+
+.PHONY : List/List.s
+
+# target to generate assembly for a file
+List/List.cpp.s:
+	$(MAKE) -f CMakeFiles\List.dir\build.make CMakeFiles/List.dir/List/List.cpp.s
+.PHONY : List/List.cpp.s
 
 Sort/bubble_sort.obj: Sort/bubble_sort.cpp.obj
 
@@ -524,6 +564,7 @@ help:
 	@echo ... heap
 	@echo ... counting
 	@echo ... quick
+	@echo ... List
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Divide-and-conquer/maximum_subarray.obj
@@ -532,6 +573,9 @@ help:
 	@echo ... Divide-and-conquer/square_matrix_multiply.obj
 	@echo ... Divide-and-conquer/square_matrix_multiply.i
 	@echo ... Divide-and-conquer/square_matrix_multiply.s
+	@echo ... List/List.obj
+	@echo ... List/List.i
+	@echo ... List/List.s
 	@echo ... Sort/bubble_sort.obj
 	@echo ... Sort/bubble_sort.i
 	@echo ... Sort/bubble_sort.s

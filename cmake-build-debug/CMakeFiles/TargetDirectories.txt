@@ -6,5 +6,6 @@ D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/bucket.dir
 D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/heap.dir
 D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/counting.dir
 D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/quick.dir
+D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/List.dir
 D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/rebuild_cache.dir
