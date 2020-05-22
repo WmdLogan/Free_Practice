@@ -280,32 +280,59 @@ Divide-and-conquer/square_matrix_multiply.cpp.s:
 	$(MAKE) -f CMakeFiles\Strassen.dir\build.make CMakeFiles/Strassen.dir/Divide-and-conquer/square_matrix_multiply.cpp.s
 .PHONY : Divide-and-conquer/square_matrix_multiply.cpp.s
 
-List/List.obj: List/List.cpp.obj
+List/LinkList.obj: List/LinkList.cpp.obj
 
-.PHONY : List/List.obj
+.PHONY : List/LinkList.obj
 
 # target to build an object file
-List/List.cpp.obj:
-	$(MAKE) -f CMakeFiles\List.dir\build.make CMakeFiles/List.dir/List/List.cpp.obj
-.PHONY : List/List.cpp.obj
+List/LinkList.cpp.obj:
+	$(MAKE) -f CMakeFiles\List.dir\build.make CMakeFiles/List.dir/List/LinkList.cpp.obj
+.PHONY : List/LinkList.cpp.obj
 
-List/List.i: List/List.cpp.i
+List/LinkList.i: List/LinkList.cpp.i
 
-.PHONY : List/List.i
+.PHONY : List/LinkList.i
 
 # target to preprocess a source file
-List/List.cpp.i:
-	$(MAKE) -f CMakeFiles\List.dir\build.make CMakeFiles/List.dir/List/List.cpp.i
-.PHONY : List/List.cpp.i
+List/LinkList.cpp.i:
+	$(MAKE) -f CMakeFiles\List.dir\build.make CMakeFiles/List.dir/List/LinkList.cpp.i
+.PHONY : List/LinkList.cpp.i
 
-List/List.s: List/List.cpp.s
+List/LinkList.s: List/LinkList.cpp.s
 
-.PHONY : List/List.s
+.PHONY : List/LinkList.s
 
 # target to generate assembly for a file
-List/List.cpp.s:
-	$(MAKE) -f CMakeFiles\List.dir\build.make CMakeFiles/List.dir/List/List.cpp.s
-.PHONY : List/List.cpp.s
+List/LinkList.cpp.s:
+	$(MAKE) -f CMakeFiles\List.dir\build.make CMakeFiles/List.dir/List/LinkList.cpp.s
+.PHONY : List/LinkList.cpp.s
+
+List/Node.obj: List/Node.cpp.obj
+
+.PHONY : List/Node.obj
+
+# target to build an object file
+List/Node.cpp.obj:
+	$(MAKE) -f CMakeFiles\List.dir\build.make CMakeFiles/List.dir/List/Node.cpp.obj
+.PHONY : List/Node.cpp.obj
+
+List/Node.i: List/Node.cpp.i
+
+.PHONY : List/Node.i
+
+# target to preprocess a source file
+List/Node.cpp.i:
+	$(MAKE) -f CMakeFiles\List.dir\build.make CMakeFiles/List.dir/List/Node.cpp.i
+.PHONY : List/Node.cpp.i
+
+List/Node.s: List/Node.cpp.s
+
+.PHONY : List/Node.s
+
+# target to generate assembly for a file
+List/Node.cpp.s:
+	$(MAKE) -f CMakeFiles\List.dir\build.make CMakeFiles/List.dir/List/Node.cpp.s
+.PHONY : List/Node.cpp.s
 
 Sort/bubble_sort.obj: Sort/bubble_sort.cpp.obj
 
@@ -573,9 +600,12 @@ help:
 	@echo ... Divide-and-conquer/square_matrix_multiply.obj
 	@echo ... Divide-and-conquer/square_matrix_multiply.i
 	@echo ... Divide-and-conquer/square_matrix_multiply.s
-	@echo ... List/List.obj
-	@echo ... List/List.i
-	@echo ... List/List.s
+	@echo ... List/LinkList.obj
+	@echo ... List/LinkList.i
+	@echo ... List/LinkList.s
+	@echo ... List/Node.obj
+	@echo ... List/Node.i
+	@echo ... List/Node.s
 	@echo ... Sort/bubble_sort.obj
 	@echo ... Sort/bubble_sort.i
 	@echo ... Sort/bubble_sort.s

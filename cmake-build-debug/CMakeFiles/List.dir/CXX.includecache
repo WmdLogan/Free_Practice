@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
-D:/CLionProjects/leetcode/List/List.cpp
-List.h
-D:/CLionProjects/leetcode/List/List.h
+D:/CLionProjects/leetcode/List/LinkList.cpp
+LinkList.h
+D:/CLionProjects/leetcode/List/LinkList.h
 iostream
 D:/CLionProjects/leetcode/List/iostream
 
-D:/CLionProjects/leetcode/List/List.h
+D:/CLionProjects/leetcode/List/LinkList.h
+Node.h
+D:/CLionProjects/leetcode/List/Node.h
+
+D:/CLionProjects/leetcode/List/Node.h
 

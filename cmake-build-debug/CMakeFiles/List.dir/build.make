@@ -56,33 +56,49 @@ include CMakeFiles/List.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/List.dir/flags.make
 
-CMakeFiles/List.dir/List/List.cpp.obj: CMakeFiles/List.dir/flags.make
-CMakeFiles/List.dir/List/List.cpp.obj: CMakeFiles/List.dir/includes_CXX.rsp
-CMakeFiles/List.dir/List/List.cpp.obj: ../List/List.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/List.dir/List/List.cpp.obj"
-	D:\Mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\List.dir\List\List.cpp.obj -c D:\CLionProjects\leetcode\List\List.cpp
+CMakeFiles/List.dir/List/Node.cpp.obj: CMakeFiles/List.dir/flags.make
+CMakeFiles/List.dir/List/Node.cpp.obj: CMakeFiles/List.dir/includes_CXX.rsp
+CMakeFiles/List.dir/List/Node.cpp.obj: ../List/Node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/List.dir/List/Node.cpp.obj"
+	D:\Mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\List.dir\List\Node.cpp.obj -c D:\CLionProjects\leetcode\List\Node.cpp
 
-CMakeFiles/List.dir/List/List.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/List.dir/List/List.cpp.i"
-	D:\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\leetcode\List\List.cpp > CMakeFiles\List.dir\List\List.cpp.i
+CMakeFiles/List.dir/List/Node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/List.dir/List/Node.cpp.i"
+	D:\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\leetcode\List\Node.cpp > CMakeFiles\List.dir\List\Node.cpp.i
 
-CMakeFiles/List.dir/List/List.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/List.dir/List/List.cpp.s"
-	D:\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\leetcode\List\List.cpp -o CMakeFiles\List.dir\List\List.cpp.s
+CMakeFiles/List.dir/List/Node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/List.dir/List/Node.cpp.s"
+	D:\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\leetcode\List\Node.cpp -o CMakeFiles\List.dir\List\Node.cpp.s
+
+CMakeFiles/List.dir/List/LinkList.cpp.obj: CMakeFiles/List.dir/flags.make
+CMakeFiles/List.dir/List/LinkList.cpp.obj: CMakeFiles/List.dir/includes_CXX.rsp
+CMakeFiles/List.dir/List/LinkList.cpp.obj: ../List/LinkList.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/List.dir/List/LinkList.cpp.obj"
+	D:\Mingw\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\List.dir\List\LinkList.cpp.obj -c D:\CLionProjects\leetcode\List\LinkList.cpp
+
+CMakeFiles/List.dir/List/LinkList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/List.dir/List/LinkList.cpp.i"
+	D:\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\CLionProjects\leetcode\List\LinkList.cpp > CMakeFiles\List.dir\List\LinkList.cpp.i
+
+CMakeFiles/List.dir/List/LinkList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/List.dir/List/LinkList.cpp.s"
+	D:\Mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\CLionProjects\leetcode\List\LinkList.cpp -o CMakeFiles\List.dir\List\LinkList.cpp.s
 
 # Object files for target List
 List_OBJECTS = \
-"CMakeFiles/List.dir/List/List.cpp.obj"
+"CMakeFiles/List.dir/List/Node.cpp.obj" \
+"CMakeFiles/List.dir/List/LinkList.cpp.obj"
 
 # External object files for target List
 List_EXTERNAL_OBJECTS =
 
-List.exe: CMakeFiles/List.dir/List/List.cpp.obj
+List.exe: CMakeFiles/List.dir/List/Node.cpp.obj
+List.exe: CMakeFiles/List.dir/List/LinkList.cpp.obj
 List.exe: CMakeFiles/List.dir/build.make
 List.exe: CMakeFiles/List.dir/linklibs.rsp
 List.exe: CMakeFiles/List.dir/objects1.rsp
 List.exe: CMakeFiles/List.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable List.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable List.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\List.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
