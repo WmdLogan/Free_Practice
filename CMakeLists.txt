@@ -12,6 +12,8 @@ add_executable(counting Sort/counting_sort.cpp)
 add_executable(bucket Sort/bucket_sort.cpp)
 add_executable(tree_walk Tree/tree_walk.cpp)
 add_executable(List #[[List/List.cpp]] List/Node.cpp List/LinkList.cpp List/LinkList.h)
+add_executable(PtF Point_to_Function.cpp)
+add_executable(stack Stack/stack.cpp)
 
 #添加包含目录
 include_directories(Sort)

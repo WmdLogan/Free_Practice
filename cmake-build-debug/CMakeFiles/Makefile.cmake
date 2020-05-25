@@ -58,8 +58,10 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/subarray.dir/DependInfo.cmake"
   "CMakeFiles/tree_walk.dir/DependInfo.cmake"
   "CMakeFiles/bucket.dir/DependInfo.cmake"
+  "CMakeFiles/stack.dir/DependInfo.cmake"
   "CMakeFiles/heap.dir/DependInfo.cmake"
   "CMakeFiles/counting.dir/DependInfo.cmake"
   "CMakeFiles/quick.dir/DependInfo.cmake"
   "CMakeFiles/List.dir/DependInfo.cmake"
+  "CMakeFiles/PtF.dir/DependInfo.cmake"
   )

@@ -175,6 +175,19 @@ bucket/fast:
 .PHONY : bucket/fast
 
 #=============================================================================
+# Target rules for targets named stack
+
+# Build rule for target.
+stack: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 stack
+.PHONY : stack
+
+# fast build rule for target.
+stack/fast:
+	$(MAKE) -f CMakeFiles\stack.dir\build.make CMakeFiles/stack.dir/build
+.PHONY : stack/fast
+
+#=============================================================================
 # Target rules for targets named heap
 
 # Build rule for target.
@@ -225,6 +238,19 @@ List: cmake_check_build_system
 List/fast:
 	$(MAKE) -f CMakeFiles\List.dir\build.make CMakeFiles/List.dir/build
 .PHONY : List/fast
+
+#=============================================================================
+# Target rules for targets named PtF
+
+# Build rule for target.
+PtF: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 PtF
+.PHONY : PtF
+
+# fast build rule for target.
+PtF/fast:
+	$(MAKE) -f CMakeFiles\PtF.dir\build.make CMakeFiles/PtF.dir/build
+.PHONY : PtF/fast
 
 Divide-and-conquer/maximum_subarray.obj: Divide-and-conquer/maximum_subarray.cpp.obj
 
@@ -333,6 +359,33 @@ List/Node.s: List/Node.cpp.s
 List/Node.cpp.s:
 	$(MAKE) -f CMakeFiles\List.dir\build.make CMakeFiles/List.dir/List/Node.cpp.s
 .PHONY : List/Node.cpp.s
+
+Point_to_Function.obj: Point_to_Function.cpp.obj
+
+.PHONY : Point_to_Function.obj
+
+# target to build an object file
+Point_to_Function.cpp.obj:
+	$(MAKE) -f CMakeFiles\PtF.dir\build.make CMakeFiles/PtF.dir/Point_to_Function.cpp.obj
+.PHONY : Point_to_Function.cpp.obj
+
+Point_to_Function.i: Point_to_Function.cpp.i
+
+.PHONY : Point_to_Function.i
+
+# target to preprocess a source file
+Point_to_Function.cpp.i:
+	$(MAKE) -f CMakeFiles\PtF.dir\build.make CMakeFiles/PtF.dir/Point_to_Function.cpp.i
+.PHONY : Point_to_Function.cpp.i
+
+Point_to_Function.s: Point_to_Function.cpp.s
+
+.PHONY : Point_to_Function.s
+
+# target to generate assembly for a file
+Point_to_Function.cpp.s:
+	$(MAKE) -f CMakeFiles\PtF.dir\build.make CMakeFiles/PtF.dir/Point_to_Function.cpp.s
+.PHONY : Point_to_Function.cpp.s
 
 Sort/bubble_sort.obj: Sort/bubble_sort.cpp.obj
 
@@ -523,6 +576,33 @@ Sort/quick_sort.cpp.s:
 	$(MAKE) -f CMakeFiles\quick.dir\build.make CMakeFiles/quick.dir/Sort/quick_sort.cpp.s
 .PHONY : Sort/quick_sort.cpp.s
 
+Stack/stack.obj: Stack/stack.cpp.obj
+
+.PHONY : Stack/stack.obj
+
+# target to build an object file
+Stack/stack.cpp.obj:
+	$(MAKE) -f CMakeFiles\stack.dir\build.make CMakeFiles/stack.dir/Stack/stack.cpp.obj
+.PHONY : Stack/stack.cpp.obj
+
+Stack/stack.i: Stack/stack.cpp.i
+
+.PHONY : Stack/stack.i
+
+# target to preprocess a source file
+Stack/stack.cpp.i:
+	$(MAKE) -f CMakeFiles\stack.dir\build.make CMakeFiles/stack.dir/Stack/stack.cpp.i
+.PHONY : Stack/stack.cpp.i
+
+Stack/stack.s: Stack/stack.cpp.s
+
+.PHONY : Stack/stack.s
+
+# target to generate assembly for a file
+Stack/stack.cpp.s:
+	$(MAKE) -f CMakeFiles\stack.dir\build.make CMakeFiles/stack.dir/Stack/stack.cpp.s
+.PHONY : Stack/stack.cpp.s
+
 Tree/tree_walk.obj: Tree/tree_walk.cpp.obj
 
 .PHONY : Tree/tree_walk.obj
@@ -588,10 +668,12 @@ help:
 	@echo ... subarray
 	@echo ... tree_walk
 	@echo ... bucket
+	@echo ... stack
 	@echo ... heap
 	@echo ... counting
 	@echo ... quick
 	@echo ... List
+	@echo ... PtF
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Divide-and-conquer/maximum_subarray.obj
@@ -606,6 +688,9 @@ help:
 	@echo ... List/Node.obj
 	@echo ... List/Node.i
 	@echo ... List/Node.s
+	@echo ... Point_to_Function.obj
+	@echo ... Point_to_Function.i
+	@echo ... Point_to_Function.s
 	@echo ... Sort/bubble_sort.obj
 	@echo ... Sort/bubble_sort.i
 	@echo ... Sort/bubble_sort.s
@@ -627,6 +712,9 @@ help:
 	@echo ... Sort/quick_sort.obj
 	@echo ... Sort/quick_sort.i
 	@echo ... Sort/quick_sort.s
+	@echo ... Stack/stack.obj
+	@echo ... Stack/stack.i
+	@echo ... Stack/stack.s
 	@echo ... Tree/tree_walk.obj
 	@echo ... Tree/tree_walk.i
 	@echo ... Tree/tree_walk.s
