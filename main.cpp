@@ -8,6 +8,8 @@
 #include "bubble_sort.h"
 #include "fstream"
 #include "vector"
+#include "algorithm"
+#include <functional>
 
 using namespace std;
 
@@ -32,13 +34,27 @@ void display(const vector<T> &vec){
     }
     cout << endl;
 }
+
+vector<int> filter(const vector<int> &vec, int val, less<int> &lt){
+    vector<int> nvec;
+    //bind2nd(lt, val)将val绑定到less的第二个参数上
+    vector<int>::const_iterator iterator = vec.begin();
+    while ((iterator = find_if(iterator, vec.end(), bind2nd(lt, val))) != vec.end()) {
+        nvec.push_back(*iterator);
+        iterator++;
+    }
+    return nvec;
+}
 int main() {
-    vector<char> vec;
-    vec.push_back('a');
-    vec.push_back('b');
-    vec.push_back('c');
-    vec.push_back('v');
-    display(vec);
+    int a1[7] = {1, 28, 2, 55, 5, 3, 89};
+    int a2[4] = {8, 13, 21, 34};
+    vector<int> vec(a1, a1 + 7);
+    less<int> less;
+//    sort(vec.begin(), vec.end(), greater<int>());
+//    vector<int>::iterator it = find(vec.begin(), vec.begin() + 7, 2);
+//    vec.erase(it,it+3);
+    vector<int> v = filter(vec, 6, less);
+    display(v);
     return 0;
     int add[] = {12, 1, 42, 3, 10, 4, 5, 14, 8, 20};
     int i;
