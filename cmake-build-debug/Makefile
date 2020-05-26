@@ -252,6 +252,19 @@ PtF/fast:
 	$(MAKE) -f CMakeFiles\PtF.dir\build.make CMakeFiles/PtF.dir/build
 .PHONY : PtF/fast
 
+#=============================================================================
+# Target rules for targets named queue
+
+# Build rule for target.
+queue: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 queue
+.PHONY : queue
+
+# fast build rule for target.
+queue/fast:
+	$(MAKE) -f CMakeFiles\queue.dir\build.make CMakeFiles/queue.dir/build
+.PHONY : queue/fast
+
 Divide-and-conquer/maximum_subarray.obj: Divide-and-conquer/maximum_subarray.cpp.obj
 
 .PHONY : Divide-and-conquer/maximum_subarray.obj
@@ -386,6 +399,33 @@ Point_to_Function.s: Point_to_Function.cpp.s
 Point_to_Function.cpp.s:
 	$(MAKE) -f CMakeFiles\PtF.dir\build.make CMakeFiles/PtF.dir/Point_to_Function.cpp.s
 .PHONY : Point_to_Function.cpp.s
+
+Queue/queue.obj: Queue/queue.cpp.obj
+
+.PHONY : Queue/queue.obj
+
+# target to build an object file
+Queue/queue.cpp.obj:
+	$(MAKE) -f CMakeFiles\queue.dir\build.make CMakeFiles/queue.dir/Queue/queue.cpp.obj
+.PHONY : Queue/queue.cpp.obj
+
+Queue/queue.i: Queue/queue.cpp.i
+
+.PHONY : Queue/queue.i
+
+# target to preprocess a source file
+Queue/queue.cpp.i:
+	$(MAKE) -f CMakeFiles\queue.dir\build.make CMakeFiles/queue.dir/Queue/queue.cpp.i
+.PHONY : Queue/queue.cpp.i
+
+Queue/queue.s: Queue/queue.cpp.s
+
+.PHONY : Queue/queue.s
+
+# target to generate assembly for a file
+Queue/queue.cpp.s:
+	$(MAKE) -f CMakeFiles\queue.dir\build.make CMakeFiles/queue.dir/Queue/queue.cpp.s
+.PHONY : Queue/queue.cpp.s
 
 Sort/bubble_sort.obj: Sort/bubble_sort.cpp.obj
 
@@ -674,6 +714,7 @@ help:
 	@echo ... quick
 	@echo ... List
 	@echo ... PtF
+	@echo ... queue
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Divide-and-conquer/maximum_subarray.obj
@@ -691,6 +732,9 @@ help:
 	@echo ... Point_to_Function.obj
 	@echo ... Point_to_Function.i
 	@echo ... Point_to_Function.s
+	@echo ... Queue/queue.obj
+	@echo ... Queue/queue.i
+	@echo ... Queue/queue.s
 	@echo ... Sort/bubble_sort.obj
 	@echo ... Sort/bubble_sort.i
 	@echo ... Sort/bubble_sort.s

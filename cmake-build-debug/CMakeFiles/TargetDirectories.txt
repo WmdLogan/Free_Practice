@@ -9,5 +9,6 @@ D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/counting.dir
 D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/quick.dir
 D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/List.dir
 D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/PtF.dir
+D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/queue.dir
 D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/rebuild_cache.dir

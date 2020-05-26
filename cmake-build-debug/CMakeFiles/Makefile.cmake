@@ -64,4 +64,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/quick.dir/DependInfo.cmake"
   "CMakeFiles/List.dir/DependInfo.cmake"
   "CMakeFiles/PtF.dir/DependInfo.cmake"
+  "CMakeFiles/queue.dir/DependInfo.cmake"
   )
