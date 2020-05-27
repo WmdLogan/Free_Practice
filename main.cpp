@@ -27,34 +27,76 @@ int compare(const void *a, const void *b) {
 }
 
 template<typename T>
-void display(const vector<T> &vec){
-    for (int i = 0; i < vec.size();i++) {
+void display(const vector<T> &vec) {
+    for (int i = 0; i < vec.size(); i++) {
         cout << vec[i] << ' ';
 
     }
     cout << endl;
 }
 
-vector<int> filter(const vector<int> &vec, int val, less<int> &lt){
+vector<int> filter(const vector<int> &vec, int val, less<int> &lt) {
     vector<int> nvec;
     //bind2nd(lt, val)将val绑定到less的第二个参数上
     vector<int>::const_iterator iterator = vec.begin();
-    while ((iterator = find_if(iterator, vec.end(), bind2nd(lt, val))) != vec.end()) {
+    while ((iterator = find_if(iterator, vec.end(), bind1st(lt, val))) != vec.end()) {
         nvec.push_back(*iterator);
         iterator++;
     }
     return nvec;
 }
+
+//filter泛型化
+template<typename InputIterator, typename OutputIterator, typename ElemType, typename Comp>
+OutputIterator filter(InputIterator first, InputIterator last, OutputIterator at,
+                      const ElemType &val, Comp pred) {
+    while ((first = find_if(first, last, bind2nd(pred, val))) != last) {
+        cout << "found value: " << *first << endl;
+        *at++ = *first++;
+    }
+    return at;
+}
+
+vector<int> sub_vec(const vector<int> &vec, int val) {
+    vector<int> local_vec(vec);
+    sort(local_vec.begin(), local_vec.end());
+    vector<int>::iterator iter =
+            find_if(local_vec.begin(), local_vec.end(), bind2nd(greater<int>(), val));
+    local_vec.erase(iter, local_vec.end());
+    return local_vec;
+}
+
+//sub_vec泛型化
+template<typename InputIterator, typename OutputIterator, typename ElemType, typename Comp>
+OutputIterator sub_vec(InputIterator first, InputIterator last, OutputIterator at,
+                      const ElemType &val, Comp pred) {
+    int size = 0;
+    while ((first = find_if(first, last, bind2nd(pred, val))) != last) {
+        cout << "found value: " << *first << endl;
+        size++;
+        *at++ = *first++;
+    }
+    sort(at - size, at, greater<int>());
+
+    return at;
+}
+
 int main() {
-    int a1[7] = {1, 28, 2, 55, 5, 3, 89};
-    int a2[4] = {8, 13, 21, 34};
+    int a1[7] = {28, 55, 4, 9, 5, 6, 89};
+    int a2[8];
     vector<int> vec(a1, a1 + 7);
-    less<int> less;
+    vector<int> Output(8);
+    sub_vec(vec.begin(), vec.end(), a2, 8, greater<int>());
+    cout << "sub_vec : " << endl;
+    display(Output);
+//    less<int> less;
 //    sort(vec.begin(), vec.end(), greater<int>());
 //    vector<int>::iterator it = find(vec.begin(), vec.begin() + 7, 2);
 //    vec.erase(it,it+3);
-    vector<int> v = filter(vec, 6, less);
-    display(v);
+//    vector<int> v = filter(vec, 6, less);
+    filter(vec.begin(), vec.end(), Output.begin(), 7, less<int>());
+    display(Output);
+    filter(vec.begin(), vec.end(), a2, 7, greater<int>());
     return 0;
     int add[] = {12, 1, 42, 3, 10, 4, 5, 14, 8, 20};
     int i;
