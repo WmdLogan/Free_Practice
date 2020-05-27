@@ -149,6 +149,19 @@ subarray/fast:
 .PHONY : subarray/fast
 
 #=============================================================================
+# Target rules for targets named tree_array
+
+# Build rule for target.
+tree_array: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 tree_array
+.PHONY : tree_array
+
+# fast build rule for target.
+tree_array/fast:
+	$(MAKE) -f CMakeFiles\tree_array.dir\build.make CMakeFiles/tree_array.dir/build
+.PHONY : tree_array/fast
+
+#=============================================================================
 # Target rules for targets named tree_walk
 
 # Build rule for target.
@@ -264,6 +277,19 @@ queue: cmake_check_build_system
 queue/fast:
 	$(MAKE) -f CMakeFiles\queue.dir\build.make CMakeFiles/queue.dir/build
 .PHONY : queue/fast
+
+#=============================================================================
+# Target rules for targets named tree_list
+
+# Build rule for target.
+tree_list: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 tree_list
+.PHONY : tree_list
+
+# fast build rule for target.
+tree_list/fast:
+	$(MAKE) -f CMakeFiles\tree_list.dir\build.make CMakeFiles/tree_list.dir/build
+.PHONY : tree_list/fast
 
 Divide-and-conquer/maximum_subarray.obj: Divide-and-conquer/maximum_subarray.cpp.obj
 
@@ -643,6 +669,60 @@ Stack/stack.cpp.s:
 	$(MAKE) -f CMakeFiles\stack.dir\build.make CMakeFiles/stack.dir/Stack/stack.cpp.s
 .PHONY : Stack/stack.cpp.s
 
+Tree/tree_array.obj: Tree/tree_array.cpp.obj
+
+.PHONY : Tree/tree_array.obj
+
+# target to build an object file
+Tree/tree_array.cpp.obj:
+	$(MAKE) -f CMakeFiles\tree_array.dir\build.make CMakeFiles/tree_array.dir/Tree/tree_array.cpp.obj
+.PHONY : Tree/tree_array.cpp.obj
+
+Tree/tree_array.i: Tree/tree_array.cpp.i
+
+.PHONY : Tree/tree_array.i
+
+# target to preprocess a source file
+Tree/tree_array.cpp.i:
+	$(MAKE) -f CMakeFiles\tree_array.dir\build.make CMakeFiles/tree_array.dir/Tree/tree_array.cpp.i
+.PHONY : Tree/tree_array.cpp.i
+
+Tree/tree_array.s: Tree/tree_array.cpp.s
+
+.PHONY : Tree/tree_array.s
+
+# target to generate assembly for a file
+Tree/tree_array.cpp.s:
+	$(MAKE) -f CMakeFiles\tree_array.dir\build.make CMakeFiles/tree_array.dir/Tree/tree_array.cpp.s
+.PHONY : Tree/tree_array.cpp.s
+
+Tree/tree_list.obj: Tree/tree_list.cpp.obj
+
+.PHONY : Tree/tree_list.obj
+
+# target to build an object file
+Tree/tree_list.cpp.obj:
+	$(MAKE) -f CMakeFiles\tree_list.dir\build.make CMakeFiles/tree_list.dir/Tree/tree_list.cpp.obj
+.PHONY : Tree/tree_list.cpp.obj
+
+Tree/tree_list.i: Tree/tree_list.cpp.i
+
+.PHONY : Tree/tree_list.i
+
+# target to preprocess a source file
+Tree/tree_list.cpp.i:
+	$(MAKE) -f CMakeFiles\tree_list.dir\build.make CMakeFiles/tree_list.dir/Tree/tree_list.cpp.i
+.PHONY : Tree/tree_list.cpp.i
+
+Tree/tree_list.s: Tree/tree_list.cpp.s
+
+.PHONY : Tree/tree_list.s
+
+# target to generate assembly for a file
+Tree/tree_list.cpp.s:
+	$(MAKE) -f CMakeFiles\tree_list.dir\build.make CMakeFiles/tree_list.dir/Tree/tree_list.cpp.s
+.PHONY : Tree/tree_list.cpp.s
+
 Tree/tree_walk.obj: Tree/tree_walk.cpp.obj
 
 .PHONY : Tree/tree_walk.obj
@@ -706,6 +786,7 @@ help:
 	@echo ... leetcode
 	@echo ... Strassen
 	@echo ... subarray
+	@echo ... tree_array
 	@echo ... tree_walk
 	@echo ... bucket
 	@echo ... stack
@@ -715,6 +796,7 @@ help:
 	@echo ... List
 	@echo ... PtF
 	@echo ... queue
+	@echo ... tree_list
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Divide-and-conquer/maximum_subarray.obj
@@ -759,6 +841,12 @@ help:
 	@echo ... Stack/stack.obj
 	@echo ... Stack/stack.i
 	@echo ... Stack/stack.s
+	@echo ... Tree/tree_array.obj
+	@echo ... Tree/tree_array.i
+	@echo ... Tree/tree_array.s
+	@echo ... Tree/tree_list.obj
+	@echo ... Tree/tree_list.i
+	@echo ... Tree/tree_list.s
 	@echo ... Tree/tree_walk.obj
 	@echo ... Tree/tree_walk.i
 	@echo ... Tree/tree_walk.s

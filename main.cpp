@@ -72,7 +72,7 @@ OutputIterator sub_vec(InputIterator first, InputIterator last, OutputIterator a
                       const ElemType &val, Comp pred) {
     int size = 0;
     while ((first = find_if(first, last, bind2nd(pred, val))) != last) {
-        cout << "found value: " << *first << endl;
+          cout << "found value: " << *first << endl;
         size++;
         *at++ = *first++;
     }

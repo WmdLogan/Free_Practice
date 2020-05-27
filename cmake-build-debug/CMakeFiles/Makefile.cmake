@@ -56,6 +56,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/leetcode.dir/DependInfo.cmake"
   "CMakeFiles/Strassen.dir/DependInfo.cmake"
   "CMakeFiles/subarray.dir/DependInfo.cmake"
+  "CMakeFiles/tree_array.dir/DependInfo.cmake"
   "CMakeFiles/tree_walk.dir/DependInfo.cmake"
   "CMakeFiles/bucket.dir/DependInfo.cmake"
   "CMakeFiles/stack.dir/DependInfo.cmake"
@@ -65,4 +66,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/List.dir/DependInfo.cmake"
   "CMakeFiles/PtF.dir/DependInfo.cmake"
   "CMakeFiles/queue.dir/DependInfo.cmake"
+  "CMakeFiles/tree_list.dir/DependInfo.cmake"
   )

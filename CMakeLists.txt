@@ -15,6 +15,8 @@ add_executable(List #[[List/List.cpp]] List/Node.cpp List/LinkList.cpp List/Link
 add_executable(PtF Point_to_Function.cpp)
 add_executable(stack Stack/stack.cpp)
 add_executable(queue Queue/queue.cpp)
+add_executable(tree_array Tree/tree_array.cpp)
+add_executable(tree_list Tree/tree_list.cpp)
 
 #添加包含目录
 include_directories(Sort)
