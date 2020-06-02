@@ -10,6 +10,7 @@
 #include "vector"
 #include "algorithm"
 #include <functional>
+#include <iterator>
 
 using namespace std;
 
@@ -85,15 +86,19 @@ int main() {
     int a1[7] = {28, 55, 4, 9, 5, 6, 89};
     int a2[8];
     vector<int> vec(a1, a1 + 7);
+    vector<int> vec_insert;
+    filter(vec.begin(), vec.end(), inserter(vec_insert,vec_insert.end()), 7, less<int>());
+    display(vec_insert);
+    return 0;
     vector<int> Output(8);
     sub_vec(vec.begin(), vec.end(), a2, 8, greater<int>());
     cout << "sub_vec : " << endl;
     display(Output);
-//    less<int> less;
-//    sort(vec.begin(), vec.end(), greater<int>());
-//    vector<int>::iterator it = find(vec.begin(), vec.begin() + 7, 2);
-//    vec.erase(it,it+3);
-//    vector<int> v = filter(vec, 6, less);
+    less<int> lesser;
+    sort(vec.begin(), vec.end(), greater<int>());
+    vector<int>::iterator it = find(vec.begin(), vec.begin() + 7, 2);
+    vec.erase(it,it+3);
+    vector<int> v = filter(vec, 6, lesser);
     filter(vec.begin(), vec.end(), Output.begin(), 7, less<int>());
     display(Output);
     filter(vec.begin(), vec.end(), a2, 7, greater<int>());

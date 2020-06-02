@@ -188,6 +188,19 @@ bucket/fast:
 .PHONY : bucket/fast
 
 #=============================================================================
+# Target rules for targets named iostream_it
+
+# Build rule for target.
+iostream_it: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 iostream_it
+.PHONY : iostream_it
+
+# fast build rule for target.
+iostream_it/fast:
+	$(MAKE) -f CMakeFiles\iostream_it.dir\build.make CMakeFiles/iostream_it.dir/build
+.PHONY : iostream_it/fast
+
+#=============================================================================
 # Target rules for targets named stack
 
 # Build rule for target.
@@ -750,6 +763,33 @@ Tree/tree_walk.cpp.s:
 	$(MAKE) -f CMakeFiles\tree_walk.dir\build.make CMakeFiles/tree_walk.dir/Tree/tree_walk.cpp.s
 .PHONY : Tree/tree_walk.cpp.s
 
+iostream_it.obj: iostream_it.cpp.obj
+
+.PHONY : iostream_it.obj
+
+# target to build an object file
+iostream_it.cpp.obj:
+	$(MAKE) -f CMakeFiles\iostream_it.dir\build.make CMakeFiles/iostream_it.dir/iostream_it.cpp.obj
+.PHONY : iostream_it.cpp.obj
+
+iostream_it.i: iostream_it.cpp.i
+
+.PHONY : iostream_it.i
+
+# target to preprocess a source file
+iostream_it.cpp.i:
+	$(MAKE) -f CMakeFiles\iostream_it.dir\build.make CMakeFiles/iostream_it.dir/iostream_it.cpp.i
+.PHONY : iostream_it.cpp.i
+
+iostream_it.s: iostream_it.cpp.s
+
+.PHONY : iostream_it.s
+
+# target to generate assembly for a file
+iostream_it.cpp.s:
+	$(MAKE) -f CMakeFiles\iostream_it.dir\build.make CMakeFiles/iostream_it.dir/iostream_it.cpp.s
+.PHONY : iostream_it.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -789,6 +829,7 @@ help:
 	@echo ... tree_array
 	@echo ... tree_walk
 	@echo ... bucket
+	@echo ... iostream_it
 	@echo ... stack
 	@echo ... heap
 	@echo ... counting
@@ -850,6 +891,9 @@ help:
 	@echo ... Tree/tree_walk.obj
 	@echo ... Tree/tree_walk.i
 	@echo ... Tree/tree_walk.s
+	@echo ... iostream_it.obj
+	@echo ... iostream_it.i
+	@echo ... iostream_it.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

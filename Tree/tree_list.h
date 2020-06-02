@@ -8,6 +8,7 @@ class Node{
 public:
     Node();
     Node *SearchNode(int nodeIndex);
+    void DeleteNode();
     int index;
     int data;
     Node *pLChild;

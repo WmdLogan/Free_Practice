@@ -5,7 +5,8 @@
 #include "queue.h"
 #include "iostream"
 using namespace std;
-Queue::Queue(int queueCapacity) {
+
+Queue::Queue(int queueCapacity) :{
     m_iQueueCapacity = queueCapacity;
     m_iHead = 0;
     m_iTail = 0;

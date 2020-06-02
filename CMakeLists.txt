@@ -17,6 +17,7 @@ add_executable(stack Stack/stack.cpp)
 add_executable(queue Queue/queue.cpp)
 add_executable(tree_array Tree/tree_array.cpp)
 add_executable(tree_list Tree/tree_list.cpp)
+add_executable(iostream_it iostream_it.cpp)
 
 #添加包含目录
 include_directories(Sort)

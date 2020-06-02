@@ -19,7 +19,7 @@ Tree_list::Tree_list() {
 }
 
 Tree_list::~Tree_list() {
-
+    DeleteNode(0, nullptr);
 }
 
 Node *Node::SearchNode(int nodeIndex) {
@@ -37,6 +37,24 @@ Node *Node::SearchNode(int nodeIndex) {
         }
     }
     return nullptr;
+}
+
+void Node::DeleteNode() {
+    if (this->pLChild != nullptr) {
+        this->pLChild->DeleteNode();
+    }
+    if (this->pRChild != nullptr) {
+        this->pRChild->DeleteNode();
+    }
+    if (this->pParent != nullptr) {
+        if (this->pParent->pLChild == this) {
+            this->pParent->pLChild == nullptr;
+        }
+        if (this->pParent->pRChild == this) {
+            this->pParent->pRChild == nullptr;
+        }
+    }
+    delete this;
 }
 
 bool Tree_list::AddNode(int nodeIndex, int direction, Node *pNode) {
@@ -58,7 +76,15 @@ bool Tree_list::AddNode(int nodeIndex, int direction, Node *pNode) {
 
 
 bool Tree_list::DeleteNode(int nodeIndex, Node *pNode) {
-    return false;
+    Node *temp = SearchNode(nodeIndex);
+    if (temp == nullptr) {
+        return false;
+    }
+    if (pNode != nullptr) {
+        pNode->data = temp->data;
+    }
+    temp->DeleteNode();
+    return true;
 }
 
 void Tree_list::PreorderTraversa() {
