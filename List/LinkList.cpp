@@ -144,7 +144,9 @@ int LinkList::LocateElem(Node *pNode) {
     return 0;
 }
 
+typedef void (LinkList::*pre)(int);//指向成员函数的指针
 int main() {
+    pre pm = 0;
     Node node1;
     Node node2;
     Node node3;
