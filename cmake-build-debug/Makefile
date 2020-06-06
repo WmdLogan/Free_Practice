@@ -304,6 +304,19 @@ tree_list/fast:
 	$(MAKE) -f CMakeFiles\tree_list.dir\build.make CMakeFiles/tree_list.dir/build
 .PHONY : tree_list/fast
 
+#=============================================================================
+# Target rules for targets named Libmat
+
+# Build rule for target.
+Libmat: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Libmat
+.PHONY : Libmat
+
+# fast build rule for target.
+Libmat/fast:
+	$(MAKE) -f CMakeFiles\Libmat.dir\build.make CMakeFiles/Libmat.dir/build
+.PHONY : Libmat/fast
+
 Divide-and-conquer/maximum_subarray.obj: Divide-and-conquer/maximum_subarray.cpp.obj
 
 .PHONY : Divide-and-conquer/maximum_subarray.obj
@@ -763,6 +776,33 @@ Tree/tree_walk.cpp.s:
 	$(MAKE) -f CMakeFiles\tree_walk.dir\build.make CMakeFiles/tree_walk.dir/Tree/tree_walk.cpp.s
 .PHONY : Tree/tree_walk.cpp.s
 
+inherit/LibMat.obj: inherit/LibMat.cpp.obj
+
+.PHONY : inherit/LibMat.obj
+
+# target to build an object file
+inherit/LibMat.cpp.obj:
+	$(MAKE) -f CMakeFiles\Libmat.dir\build.make CMakeFiles/Libmat.dir/inherit/LibMat.cpp.obj
+.PHONY : inherit/LibMat.cpp.obj
+
+inherit/LibMat.i: inherit/LibMat.cpp.i
+
+.PHONY : inherit/LibMat.i
+
+# target to preprocess a source file
+inherit/LibMat.cpp.i:
+	$(MAKE) -f CMakeFiles\Libmat.dir\build.make CMakeFiles/Libmat.dir/inherit/LibMat.cpp.i
+.PHONY : inherit/LibMat.cpp.i
+
+inherit/LibMat.s: inherit/LibMat.cpp.s
+
+.PHONY : inherit/LibMat.s
+
+# target to generate assembly for a file
+inherit/LibMat.cpp.s:
+	$(MAKE) -f CMakeFiles\Libmat.dir\build.make CMakeFiles/Libmat.dir/inherit/LibMat.cpp.s
+.PHONY : inherit/LibMat.cpp.s
+
 iostream_it.obj: iostream_it.cpp.obj
 
 .PHONY : iostream_it.obj
@@ -838,6 +878,7 @@ help:
 	@echo ... PtF
 	@echo ... queue
 	@echo ... tree_list
+	@echo ... Libmat
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Divide-and-conquer/maximum_subarray.obj
@@ -891,6 +932,9 @@ help:
 	@echo ... Tree/tree_walk.obj
 	@echo ... Tree/tree_walk.i
 	@echo ... Tree/tree_walk.s
+	@echo ... inherit/LibMat.obj
+	@echo ... inherit/LibMat.i
+	@echo ... inherit/LibMat.s
 	@echo ... iostream_it.obj
 	@echo ... iostream_it.i
 	@echo ... iostream_it.s
