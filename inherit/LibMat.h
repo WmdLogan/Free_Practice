@@ -38,7 +38,7 @@ public:
 
     virtual void print() const;
 
-    const std::string narrator() const;
+    const std::string &narrator() const;
 protected:
     std::string _narrator;
 };

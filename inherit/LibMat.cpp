@@ -39,7 +39,7 @@ const std::string &Book::author() const {
 
 
 AudioBook::AudioBook(const string &title, const string &author, const string &narrator)
-        : Book(title, author), _narrator(narrator) {
+        : 0, _narrator(narrator) {
     cout << "AudioBook::AudioBook( " << _title
          << ", " << _author << ", " << _narrator << " ) constructor\n";
 }
@@ -53,7 +53,7 @@ void AudioBook::print() const {
          << "My narrator is: " << _narrator << endl;
 }
 
-const std::string AudioBook::narrator() const {
+const std::string &AudioBook::narrator() const {
     return _narrator;
 }
 int main(){
@@ -62,8 +62,8 @@ int main(){
     cout << endl;
     Book book("The Castle", "Franz Kafka");
     print(book);*/
-    LibMat *au = new AudioBook("Mason and Dixon", "Thomas Pynchon", "Edwin Leonard");
+//    LibMat *au = new AudioBook("Mason and Dixon", "Thomas Pynchon", "Edwin Leonard");
     AudioBook audioBook("Mason and Dixon", "Thomas Pynchon", "Edwin Leonard");
-    print(*au);
+    print(audioBook);
     return 0;
 }
