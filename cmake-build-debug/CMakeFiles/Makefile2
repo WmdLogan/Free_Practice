@@ -55,6 +55,7 @@ CMAKE_BINARY_DIR = D:\CLionProjects\leetcode\cmake-build-debug
 all: CMakeFiles/leetcode.dir/all
 all: CMakeFiles/Strassen.dir/all
 all: CMakeFiles/subarray.dir/all
+all: CMakeFiles/graph.dir/all
 all: CMakeFiles/tree_array.dir/all
 all: CMakeFiles/tree_walk.dir/all
 all: CMakeFiles/bucket.dir/all
@@ -80,6 +81,7 @@ preinstall:
 clean: CMakeFiles/leetcode.dir/clean
 clean: CMakeFiles/Strassen.dir/clean
 clean: CMakeFiles/subarray.dir/clean
+clean: CMakeFiles/graph.dir/clean
 clean: CMakeFiles/tree_array.dir/clean
 clean: CMakeFiles/tree_walk.dir/clean
 clean: CMakeFiles/bucket.dir/clean
@@ -103,7 +105,7 @@ clean: CMakeFiles/Libmat.dir/clean
 CMakeFiles/leetcode.dir/all:
 	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/depend
 	$(MAKE) -f CMakeFiles\leetcode.dir\build.make CMakeFiles/leetcode.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=18,19,20,21,22 "Built target leetcode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=20,21,22,23,24 "Built target leetcode"
 .PHONY : CMakeFiles/leetcode.dir/all
 
 # Build rule for subdir invocation for target.
@@ -157,7 +159,7 @@ CMakeFiles/Strassen.dir/clean:
 CMakeFiles/subarray.dir/all:
 	$(MAKE) -f CMakeFiles\subarray.dir\build.make CMakeFiles/subarray.dir/depend
 	$(MAKE) -f CMakeFiles\subarray.dir\build.make CMakeFiles/subarray.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=29,30 "Built target subarray"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=31,32 "Built target subarray"
 .PHONY : CMakeFiles/subarray.dir/all
 
 # Build rule for subdir invocation for target.
@@ -178,13 +180,40 @@ CMakeFiles/subarray.dir/clean:
 .PHONY : CMakeFiles/subarray.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/graph.dir
+
+# All Build rule for target.
+CMakeFiles/graph.dir/all:
+	$(MAKE) -f CMakeFiles\graph.dir\build.make CMakeFiles/graph.dir/depend
+	$(MAKE) -f CMakeFiles\graph.dir\build.make CMakeFiles/graph.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=14,15 "Built target graph"
+.PHONY : CMakeFiles/graph.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/graph.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/graph.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/graph.dir/rule
+
+# Convenience name for target.
+graph: CMakeFiles/graph.dir/rule
+
+.PHONY : graph
+
+# clean rule for target.
+CMakeFiles/graph.dir/clean:
+	$(MAKE) -f CMakeFiles\graph.dir\build.make CMakeFiles/graph.dir/clean
+.PHONY : CMakeFiles/graph.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/tree_array.dir
 
 # All Build rule for target.
 CMakeFiles/tree_array.dir/all:
 	$(MAKE) -f CMakeFiles\tree_array.dir\build.make CMakeFiles/tree_array.dir/depend
 	$(MAKE) -f CMakeFiles\tree_array.dir\build.make CMakeFiles/tree_array.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=31,32 "Built target tree_array"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=33,34 "Built target tree_array"
 .PHONY : CMakeFiles/tree_array.dir/all
 
 # Build rule for subdir invocation for target.
@@ -211,7 +240,7 @@ CMakeFiles/tree_array.dir/clean:
 CMakeFiles/tree_walk.dir/all:
 	$(MAKE) -f CMakeFiles\tree_walk.dir\build.make CMakeFiles/tree_walk.dir/depend
 	$(MAKE) -f CMakeFiles\tree_walk.dir\build.make CMakeFiles/tree_walk.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=35,36 "Built target tree_walk"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=37,38 "Built target tree_walk"
 .PHONY : CMakeFiles/tree_walk.dir/all
 
 # Build rule for subdir invocation for target.
@@ -265,7 +294,7 @@ CMakeFiles/bucket.dir/clean:
 CMakeFiles/iostream_it.dir/all:
 	$(MAKE) -f CMakeFiles\iostream_it.dir\build.make CMakeFiles/iostream_it.dir/depend
 	$(MAKE) -f CMakeFiles\iostream_it.dir\build.make CMakeFiles/iostream_it.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=16,17 "Built target iostream_it"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=18,19 "Built target iostream_it"
 .PHONY : CMakeFiles/iostream_it.dir/all
 
 # Build rule for subdir invocation for target.
@@ -292,7 +321,7 @@ CMakeFiles/iostream_it.dir/clean:
 CMakeFiles/stack.dir/all:
 	$(MAKE) -f CMakeFiles\stack.dir\build.make CMakeFiles/stack.dir/depend
 	$(MAKE) -f CMakeFiles\stack.dir\build.make CMakeFiles/stack.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=27,28 "Built target stack"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=29,30 "Built target stack"
 .PHONY : CMakeFiles/stack.dir/all
 
 # Build rule for subdir invocation for target.
@@ -319,7 +348,7 @@ CMakeFiles/stack.dir/clean:
 CMakeFiles/heap.dir/all:
 	$(MAKE) -f CMakeFiles\heap.dir\build.make CMakeFiles/heap.dir/depend
 	$(MAKE) -f CMakeFiles\heap.dir\build.make CMakeFiles/heap.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=14,15 "Built target heap"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=16,17 "Built target heap"
 .PHONY : CMakeFiles/heap.dir/all
 
 # Build rule for subdir invocation for target.
@@ -373,7 +402,7 @@ CMakeFiles/counting.dir/clean:
 CMakeFiles/quick.dir/all:
 	$(MAKE) -f CMakeFiles\quick.dir\build.make CMakeFiles/quick.dir/depend
 	$(MAKE) -f CMakeFiles\quick.dir\build.make CMakeFiles/quick.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=25,26 "Built target quick"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=27,28 "Built target quick"
 .PHONY : CMakeFiles/quick.dir/all
 
 # Build rule for subdir invocation for target.
@@ -454,7 +483,7 @@ CMakeFiles/PtF.dir/clean:
 CMakeFiles/queue.dir/all:
 	$(MAKE) -f CMakeFiles\queue.dir\build.make CMakeFiles/queue.dir/depend
 	$(MAKE) -f CMakeFiles\queue.dir\build.make CMakeFiles/queue.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=23,24 "Built target queue"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=25,26 "Built target queue"
 .PHONY : CMakeFiles/queue.dir/all
 
 # Build rule for subdir invocation for target.
@@ -481,7 +510,7 @@ CMakeFiles/queue.dir/clean:
 CMakeFiles/tree_list.dir/all:
 	$(MAKE) -f CMakeFiles\tree_list.dir\build.make CMakeFiles/tree_list.dir/depend
 	$(MAKE) -f CMakeFiles\tree_list.dir\build.make CMakeFiles/tree_list.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=33,34 "Built target tree_list"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\CLionProjects\leetcode\cmake-build-debug\CMakeFiles --progress-num=35,36 "Built target tree_list"
 .PHONY : CMakeFiles/tree_list.dir/all
 
 # Build rule for subdir invocation for target.

@@ -136,7 +136,23 @@ void Fibonacci<length, beg_pos>::gen_elems(int pos) const {
 
 }
 
+class printIt {
+public:
+    printIt(ostream &os) : _os(os) {}
+
+    template<typename elemType>
+    void print(const elemType &elem, char delimiter = '\n') {
+        _os << elem << delimiter;
+    }
+
+private:
+    ostream &_os;
+};
+
 int main() {
+    printIt to_standard_out(cout);
+    to_standard_out.print("hello");
+    to_standard_out.print(1024);
     Fibonacci<8> fib1;//相当于Fibonacci<8,1>
     Fibonacci<8, 8> fib2;
     Fibonacci<12, 8> fib3;

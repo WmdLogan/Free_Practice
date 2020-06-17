@@ -39,7 +39,7 @@ const std::string &Book::author() const {
 
 
 AudioBook::AudioBook(const string &title, const string &author, const string &narrator)
-        : 0, _narrator(narrator) {
+        : Book(title, author), _narrator(narrator) {
     cout << "AudioBook::AudioBook( " << _title
          << ", " << _author << ", " << _narrator << " ) constructor\n";
 }
