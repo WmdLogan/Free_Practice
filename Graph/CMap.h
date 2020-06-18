@@ -50,12 +50,17 @@ public:
 
     void primTree(int nodeIndex);//prim生成树
 
+    void kruskalTree();
 private:
     bool getValueFromMatrix(int row, int col, int &val);//从矩阵中获取权值
 
     void breadthFirstTraverseImpl(vector<int> preVec);//广度优先遍历实现函数
 
     int getMinEdge(vector<Edge> edgeVec);
+
+    bool isInSet(vector<int> nodeSet, int target);
+
+    void mergeNodeSet(vector<int> &nodeSetA, vector<int> nodeSetB);
 private:
     int m_iCapacity;//图中最多可以容纳的顶点数
     int m_iNodeCount;//已经添加的顶点（结点）个数
