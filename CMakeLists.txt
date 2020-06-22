@@ -3,6 +3,7 @@ project(leetcode)
 
 set(CMAKE_CXX_STANDARD 14)
 
+
 add_executable(leetcode  Sort/insertion_sort.cpp main.cpp  Sort/insertion_sort.h Sort/merge_sort.cpp Sort/merge_sort.h Sort/bubble_sort.cpp Sort/bubble_sort.h)
 add_executable(subarray Divide-and-conquer/maximum_subarray.cpp)
 add_executable(Strassen Divide-and-conquer/square_matrix_multiply.cpp)
